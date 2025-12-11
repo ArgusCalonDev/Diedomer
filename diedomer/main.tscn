@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://7j5c4nxlv4vn"]
+
+[ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bk3m60xa42bxo" path="res://icon.svg" id="3_lquwl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+size = Vector2(66, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
+size = Vector2(146.351, 57)
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="player" type="CharacterBody2D" parent="."]
+position = Vector2(53.9601, 619.7)
+script = ExtResource("2_1bvp3")
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+position = Vector2(5, 3)
+scale = Vector2(0.536122, 0.535707)
+texture = ExtResource("3_lquwl")
+
+[node name="Area2D" type="Area2D" parent="player"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player/Area2D"]
+position = Vector2(5.03992, 0.800354)
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="parkour" type="Area2D" parent="."]
+position = Vector2(373, 144)
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="parkour"]
+position = Vector2(-11, 375)
+scale = Vector2(1.125, 0.4375)
+texture = ExtResource("3_lquwl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="parkour"]
+position = Vector2(-295, 540)
+scale = Vector2(1.125, 0.4375)
+texture = ExtResource("3_lquwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="parkour"]
+position = Vector2(-295.175, 540.5)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Buttonrgt" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(910.461, 596.28)
+scale = Vector2(1.09796, 0.654066)
+texture_normal = ExtResource("3_lquwl")
+texture_pressed = ExtResource("3_lquwl")
+
+[node name="Buttondlft" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(9, 333)
+scale = Vector2(0.703125, 0.585938)
+texture_normal = ExtResource("3_lquwl")
+
+[node name="Buttonjmp" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2(913, 270)
+texture_normal = ExtResource("3_lquwl")
+
+[connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="player/Area2D" to="player" method="_on_area_2d_area_exited"]
+[connection signal="pressed" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_pressed"]
+[connection signal="released" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_released"]
+[connection signal="pressed" from="CanvasLayer/Buttondlft" to="player" method="_on_buttondlft_pressed"]
+[connection signal="released" from="CanvasLayer/Buttondlft" to="player" method="_on_buttondlft_released"]
+[connection signal="pressed" from="CanvasLayer/Buttonjmp" to="player" method="_on_buttonjmp_pressed"]
