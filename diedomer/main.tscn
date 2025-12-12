@@ -56,13 +56,6 @@ offset_right = 1016.0
 offset_bottom = 721.0
 scale = Vector2(1.09796, 0.654066)
 
-[node name="Buttondlft" type="Button" parent="CanvasLayer"]
-offset_left = 9.0
-offset_top = 333.0
-offset_right = 136.0
-offset_bottom = 459.0
-scale = Vector2(0.703125, 0.585938)
-
 [node name="Buttonjmp" type="Button" parent="CanvasLayer"]
 offset_left = 899.0
 offset_top = 263.0
@@ -73,6 +66,4 @@ offset_bottom = 354.0
 [connection signal="area_exited" from="player/Area2D" to="player" method="_on_area_2d_area_exited"]
 [connection signal="button_down" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_button_down"]
 [connection signal="button_up" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_button_up"]
-[connection signal="button_down" from="CanvasLayer/Buttondlft" to="player" method="_on_buttondlft_button_down"]
-[connection signal="button_up" from="CanvasLayer/Buttondlft" to="player" method="_on_buttondlft_button_up"]
 [connection signal="pressed" from="CanvasLayer/Buttonjmp" to="player" method="_on_buttonjmp_pressed"]
