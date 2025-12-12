@@ -8,13 +8,13 @@
 size = Vector2(66, 69)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
-size = Vector2(263.5, 58)
+size = Vector2(177.668, 71.6421)
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_h2yge")
 
 [node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(53.9601, 619.7)
+position = Vector2(41.1434, 312.989)
 script = ExtResource("2_1bvp3")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
@@ -29,44 +29,47 @@ collision_layer = 2
 position = Vector2(5.03992, 0.800354)
 shape = SubResource("RectangleShape2D_1bvp3")
 
-[node name="jebakan!" type="Area2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(4.85663, 2.01105)
+
+[node name="jebakan!" type="Area2D" parent="." groups=["jebakan"]]
 position = Vector2(373, 144)
 collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="jebakan!"]
-position = Vector2(18821, -112)
+position = Vector2(18576, -117)
 scale = Vector2(300, 0.496)
 texture = ExtResource("3_lquwl")
 
 [node name="Sprite2D2" type="Sprite2D" parent="jebakan!"]
-position = Vector2(18824, 541)
+position = Vector2(18574, 539)
 scale = Vector2(300, 0.496)
 texture = ExtResource("3_lquwl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(39148, -116)
-scale = Vector2(300, 1)
+position = Vector2(11141, -116.23)
+scale = Vector2(132.494, -0.704346)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(39154, 543)
-scale = Vector2(300, 1)
+position = Vector2(11129, 546)
+scale = Vector2(132.494, -0.704346)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Buttonrgt" type="Button" parent="CanvasLayer"]
-offset_left = 910.0
-offset_top = 596.0
-offset_right = 1016.0
-offset_bottom = 721.0
+offset_left = 918.0
+offset_top = 561.0
+offset_right = 1024.0
+offset_bottom = 686.0
 scale = Vector2(1.09796, 0.654066)
 
 [node name="Buttonjmp" type="Button" parent="CanvasLayer"]
-offset_left = 899.0
-offset_top = 263.0
-offset_right = 1006.0
-offset_bottom = 354.0
+offset_left = 918.0
+offset_top = 450.0
+offset_right = 1025.0
+offset_bottom = 541.0
 
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="player/Area2D" to="player" method="_on_area_2d_area_exited"]
