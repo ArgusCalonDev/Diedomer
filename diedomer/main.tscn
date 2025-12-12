@@ -37,42 +37,34 @@ position = Vector2(373, 144)
 collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="jebakan!"]
-position = Vector2(18576, -117)
-scale = Vector2(300, 0.496)
+position = Vector2(25993, -109.872)
+scale = Vector2(415.891, 0.607375)
 texture = ExtResource("3_lquwl")
 
 [node name="Sprite2D2" type="Sprite2D" parent="jebakan!"]
-position = Vector2(18574, 539)
-scale = Vector2(300, 0.496)
+position = Vector2(25992.5, 539)
+scale = Vector2(415.914, 0.496)
 texture = ExtResource("3_lquwl")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(11141, -116.23)
-scale = Vector2(132.494, -0.704346)
+position = Vector2(25977, -104)
+scale = Vector2(300, -0.704)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(11129, 546)
-scale = Vector2(132.494, -0.704346)
+position = Vector2(26001, 534)
+scale = Vector2(300, -0.704)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Buttonrgt" type="Button" parent="CanvasLayer"]
-offset_left = 918.0
-offset_top = 561.0
-offset_right = 1024.0
-offset_bottom = 686.0
-scale = Vector2(1.09796, 0.654066)
-
 [node name="Buttonjmp" type="Button" parent="CanvasLayer"]
-offset_left = 918.0
-offset_top = 450.0
-offset_right = 1025.0
-offset_bottom = 541.0
+offset_left = 827.0
+offset_top = 55.0
+offset_right = 1078.0
+offset_bottom = 655.0
+text = "JUMP"
 
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="player/Area2D" to="player" method="_on_area_2d_area_exited"]
-[connection signal="button_down" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_button_down"]
-[connection signal="button_up" from="CanvasLayer/Buttonrgt" to="player" method="_on_buttonrgt_button_up"]
 [connection signal="pressed" from="CanvasLayer/Buttonjmp" to="player" method="_on_buttonjmp_pressed"]

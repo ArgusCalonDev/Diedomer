@@ -3,10 +3,13 @@ extends CharacterBody2D
 var gravity = 1200
 var jump_force = -450
 var gravity_dir = Vector2.DOWN # gravitasi kebawah
+var speed := 1.5
+var move_dir = 0.5
 
 func _physics_process(delta: float) -> void:
     #terapkan gravitasi sesuai arah
     velocity += gravity_dir * gravity * delta
+    velocity.x += speed * move_dir
     move_and_slide()
     
 func _on_buttonrgt_button_down() -> void:
