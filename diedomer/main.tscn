@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://7j5c4nxlv4vn"]
+[gd_scene load_steps=8 format=3 uid="uid://7j5c4nxlv4vn"]
 
 [ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
@@ -10,11 +10,17 @@ size = Vector2(66, 69)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
 size = Vector2(177.668, 71.6421)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
+size = Vector2(128, 319.25)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 40
+
 [node name="main" type="Node2D"]
 script = ExtResource("1_h2yge")
 
 [node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(41.1434, 312.989)
+position = Vector2(2.83038, 358.018)
 script = ExtResource("2_1bvp3")
 
 [node name="Sprite2D" type="Sprite2D" parent="player"]
@@ -36,25 +42,43 @@ position = Vector2(4.85663, 2.01105)
 position = Vector2(373, 144)
 collision_mask = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="jebakan!"]
+[node name="up" type="Sprite2D" parent="jebakan!"]
 position = Vector2(25993, -109.872)
 scale = Vector2(415.891, 0.607375)
 texture = ExtResource("3_lquwl")
 
-[node name="Sprite2D2" type="Sprite2D" parent="jebakan!"]
+[node name="down" type="Sprite2D" parent="jebakan!"]
 position = Vector2(25992.5, 539)
 scale = Vector2(415.914, 0.496)
 texture = ExtResource("3_lquwl")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
+[node name="uppercollision" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(25977, -104)
 scale = Vector2(300, -0.704)
 shape = SubResource("RectangleShape2D_h2yge")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="jebakan!"]
+[node name="downercollision" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(26001, 534)
 scale = Vector2(300, -0.704)
 shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="up gd" type="Sprite2D" parent="jebakan!"]
+position = Vector2(52688, 15.25)
+scale = Vector2(1, 2.58984)
+texture = ExtResource("3_lquwl")
+
+[node name="down gd" type="Sprite2D" parent="jebakan!"]
+position = Vector2(52684, 458.5)
+scale = Vector2(1, 2.53906)
+texture = ExtResource("3_lquwl")
+
+[node name="up chape" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(52687, 20.375)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="down chape" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(52685, 456.25)
+shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -65,6 +89,43 @@ offset_right = 1078.0
 offset_bottom = 655.0
 text = "JUMP"
 
+[node name="MenuAwal" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="Mulai" type="Button" parent="MenuAwal"]
+process_mode = 3
+offset_left = 218.0
+offset_top = 247.0
+offset_right = 393.0
+offset_bottom = 354.0
+text = "mulai"
+
+[node name="BalikKeMainmenu" type="Button" parent="MenuAwal"]
+process_mode = 3
+offset_left = 215.0
+offset_top = 371.0
+offset_right = 400.0
+offset_bottom = 477.0
+text = "kembali ke main menu"
+
+[node name="menu awal" type="Label" parent="MenuAwal"]
+offset_left = 187.0
+offset_top = 113.0
+offset_right = 441.0
+offset_bottom = 168.0
+text = "MENU AWAL!"
+label_settings = SubResource("LabelSettings_h2yge")
+
+[node name="tutorial" type="Label" parent="MenuAwal"]
+offset_left = -2.0
+offset_top = 185.0
+offset_right = 548.0
+offset_bottom = 234.0
+text = "cara main: klik tombol jump berkali kali dan jangan sampai menyentuh
+rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="player/Area2D" to="player" method="_on_area_2d_area_exited"]
 [connection signal="pressed" from="CanvasLayer/Buttonjmp" to="player" method="_on_buttonjmp_pressed"]
+[connection signal="pressed" from="MenuAwal/Mulai" to="." method="_on_mulai_pressed"]
+[connection signal="pressed" from="MenuAwal/BalikKeMainmenu" to="." method="_on_balik_ke_mainmenu_pressed"]
