@@ -8,7 +8,7 @@
 size = Vector2(66, 69)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
-size = Vector2(146.351, 57)
+size = Vector2(263.5, 58)
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_h2yge")
@@ -29,22 +29,28 @@ collision_layer = 2
 position = Vector2(5.03992, 0.800354)
 shape = SubResource("RectangleShape2D_1bvp3")
 
-[node name="parkour" type="Area2D" parent="."]
+[node name="jebakan!" type="Area2D" parent="."]
 position = Vector2(373, 144)
 collision_mask = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="parkour"]
-position = Vector2(-11, 375)
-scale = Vector2(1.125, 0.4375)
+[node name="Sprite2D" type="Sprite2D" parent="jebakan!"]
+position = Vector2(18821, -112)
+scale = Vector2(300, 0.496)
 texture = ExtResource("3_lquwl")
 
-[node name="Sprite2D2" type="Sprite2D" parent="parkour"]
-position = Vector2(-295, 540)
-scale = Vector2(1.125, 0.4375)
+[node name="Sprite2D2" type="Sprite2D" parent="jebakan!"]
+position = Vector2(18824, 541)
+scale = Vector2(300, 0.496)
 texture = ExtResource("3_lquwl")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="parkour"]
-position = Vector2(-295.175, 540.5)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(39148, -116)
+scale = Vector2(300, 1)
+shape = SubResource("RectangleShape2D_h2yge")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(39154, 543)
+scale = Vector2(300, 1)
 shape = SubResource("RectangleShape2D_h2yge")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
