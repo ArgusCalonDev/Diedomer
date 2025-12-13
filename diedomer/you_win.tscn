@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6f2kfuvk5ect"]
+
+[ext_resource type="Script" uid="uid://balwewnyrln2" path="res://you_win.gd" id="1_vkac0"]
+[ext_resource type="FontFile" uid="uid://bhyt8kvscyjue" path="res://fonts/SpaceNova-6Rpd1.otf" id="1_w5032"]
+[ext_resource type="Texture2D" uid="uid://bum8fdpaoicnw" path="res://assets/images/sky-bg-wins.jpg" id="2_rlycu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vkac0"]
+font = ExtResource("1_w5032")
+font_size = 35
+
+[node name="You win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vkac0")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1089.0
+offset_bottom = 723.0
+texture = ExtResource("2_rlycu")
+expand_mode = 1
+
+[node name="you win label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 168.0
+offset_right = 789.0
+offset_bottom = 206.0
+text = "Kamu menang!"
+label_settings = SubResource("LabelSettings_vkac0")
+
+[node name="main lagi" type="Button" parent="."]
+layout_mode = 0
+offset_left = 428.0
+offset_top = 228.0
+offset_right = 792.0
+offset_bottom = 409.0
+theme_override_font_sizes/font_size = 35
+text = "main lagi"
+
+[node name="ke main menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 438.0
+offset_right = 797.0
+offset_bottom = 619.0
+theme_override_font_sizes/font_size = 35
+text = "ke main menu"
+
+[connection signal="pressed" from="main lagi" to="." method="_on_main_lagi_pressed"]
+[connection signal="pressed" from="ke main menu" to="." method="_on_ke_main_menu_pressed"]

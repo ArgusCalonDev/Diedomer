@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=3 uid="uid://c06tuekecq05q"]
+
+[ext_resource type="FontFile" uid="uid://bhyt8kvscyjue" path="res://fonts/SpaceNova-6Rpd1.otf" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://waw0h0x4comk" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://dgu5puqm2bhbd" path="res://assets/images/handmade-skull-laid-orange-paper-stripe_11zon.jpg" id="2_glbon"]
+[ext_resource type="Texture2D" uid="uid://cppd0clr6grq6" path="res://assets/icons/github.png" id="3_fu7sn"]
+[ext_resource type="AudioStream" uid="uid://dh0uaschpyyry" path="res://assets/audios/main music (diedomer).mp3" id="4_jix8l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
+font = ExtResource("1_06t4h")
+font_size = 40
+
+[sub_resource type="LabelSettings" id="LabelSettings_jix8l"]
+font_size = 20
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7vrkn")
+
+[node name="bg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1077.0
+offset_bottom = 717.0
+texture = ExtResource("2_glbon")
+expand_mode = 1
+
+[node name="main_menu_label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 148.0
+offset_right = 744.0
+offset_bottom = 237.0
+text = "MAIN MENU
+DIEDOMER!"
+label_settings = SubResource("LabelSettings_7vrkn")
+
+[node name="main" type="Button" parent="."]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 265.0
+offset_right = 789.0
+offset_bottom = 429.0
+theme_override_font_sizes/font_size = 35
+text = "main"
+
+[node name="keluar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 443.0
+offset_right = 787.0
+offset_bottom = 607.0
+theme_override_font_sizes/font_size = 35
+text = "keluar"
+
+[node name="credit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 309.0
+offset_right = 259.0
+offset_bottom = 332.0
+text = "music by: pixabay.com
+images by: freepik.com"
+label_settings = SubResource("LabelSettings_jix8l")
+
+[node name="dev" type="Label" parent="."]
+layout_mode = 0
+offset_left = 809.0
+offset_top = 636.0
+offset_right = 1042.0
+offset_bottom = 664.0
+text = "open source game
+by Tekenoi"
+label_settings = SubResource("LabelSettings_jix8l")
+
+[node name="github repo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 574.0
+offset_right = 305.0
+offset_bottom = 633.0
+text = "mau memodifikasi game ini?
+fork repository di github"
+label_settings = SubResource("LabelSettings_jix8l")
+
+[node name="github" type="Button" parent="."]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 456.0
+offset_right = 196.0
+offset_bottom = 570.0
+icon = ExtResource("3_fu7sn")
+flat = true
+expand_icon = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_jix8l")
+volume_db = 5.333
+autoplay = true
+
+[connection signal="pressed" from="main" to="." method="_on_main_pressed"]
+[connection signal="pressed" from="keluar" to="." method="_on_keluar_pressed"]
+[connection signal="pressed" from="github" to="." method="_on_github_pressed"]

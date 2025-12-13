@@ -11,20 +11,24 @@ config_version=5
 [application]
 
 config/name="DieDOMer"
-run/main_scene="uid://7j5c4nxlv4vn"
+run/main_scene="uid://c06tuekecq05q"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://rtr3u03u1mb0"
 
 [display]
 
 window/size/viewport_width=1080
 window/size/viewport_height=720
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [global_group]
 
 jebakan=""
+"win area"=""
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
