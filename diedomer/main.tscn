@@ -1,9 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://7j5c4nxlv4vn"]
+[gd_scene load_steps=19 format=3 uid="uid://7j5c4nxlv4vn"]
 
 [ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://dvu5ysmy2oyad" path="res://assets/images/bg-domer.jpg" id="2_7mycd"]
 [ext_resource type="Texture2D" uid="uid://eup7pti5du2f" path="res://assets/images/DOMER cat.png" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://c0bd8uj3x8xyy" path="res://assets/images/background-keramat.png" id="3_272bh"]
 [ext_resource type="Texture2D" uid="uid://bk3m60xa42bxo" path="res://icon.svg" id="3_lquwl"]
 [ext_resource type="AudioStream" uid="uid://dh0uaschpyyry" path="res://assets/audios/main music (diedomer).mp3" id="4_1bvp3"]
 
@@ -52,8 +53,16 @@ offset_bottom = 798.0
 texture = ExtResource("2_7mycd")
 expand_mode = 1
 
+[node name="bg2" type="TextureRect" parent="."]
+offset_left = 53692.0
+offset_top = -91.0
+offset_right = 91902.0
+offset_bottom = 799.0
+texture = ExtResource("3_272bh")
+expand_mode = 1
+
 [node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(60.3036, 332.499)
+position = Vector2(47.9949, 354.642)
 collision_mask = 9
 script = ExtResource("2_1bvp3")
 
@@ -295,34 +304,34 @@ process_mode = 3
 
 [node name="Mulai" type="Button" parent="MenuAwal"]
 process_mode = 3
-offset_left = 218.0
-offset_top = 247.0
-offset_right = 393.0
-offset_bottom = 354.0
+offset_left = 760.0
+offset_top = 264.0
+offset_right = 1018.0
+offset_bottom = 366.0
 text = "mulai"
 
 [node name="BalikKeMainmenu" type="Button" parent="MenuAwal"]
 process_mode = 3
-offset_left = 215.0
-offset_top = 371.0
-offset_right = 400.0
-offset_bottom = 477.0
+offset_left = 763.0
+offset_top = 375.0
+offset_right = 1021.0
+offset_bottom = 481.0
 text = "kembali ke main menu"
 
 [node name="menu awal" type="Label" parent="MenuAwal"]
-offset_left = 187.0
-offset_top = 113.0
-offset_right = 441.0
-offset_bottom = 168.0
+offset_left = 760.45
+offset_top = 136.721
+offset_right = 1014.45
+offset_bottom = 191.721
 text = "MENU AWAL!"
 label_settings = SubResource("LabelSettings_h2yge")
 
 [node name="tutorial" type="Label" parent="MenuAwal"]
-offset_left = -2.0
-offset_top = 185.0
-offset_right = 548.0
-offset_bottom = 234.0
-text = "cara main: tap layarjump berkali kali dan jangan sampai menyentuh
+offset_left = 607.0
+offset_top = 202.0
+offset_right = 1157.0
+offset_bottom = 251.0
+text = "cara main: tap layar berkali kali dan jangan sampai menyentuh
 rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
 label_settings = SubResource("LabelSettings_7mycd")
 
@@ -337,13 +346,12 @@ offset_bottom = 234.0
 text = "restart (ulang)"
 
 [node name="winarea" type="Area2D" parent="." groups=["win area"]]
-visible = false
-position = Vector2(53659, 297)
+position = Vector2(92116.7, 253.257)
 collision_layer = 8
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="winarea"]
-position = Vector2(3.99854, 32)
+position = Vector2(-151.712, 87.7434)
 shape = SubResource("RectangleShape2D_5vw27")
 
 [connection signal="area_entered" from="player/Area2D" to="player" method="_on_area_2d_area_entered"]
