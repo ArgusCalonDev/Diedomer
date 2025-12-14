@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://7j5c4nxlv4vn"]
+[gd_scene load_steps=16 format=3 uid="uid://7j5c4nxlv4vn"]
 
 [ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
@@ -26,6 +26,10 @@ size = Vector2(128, 319.25)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
 font_size = 40
+font_color = Color(0.0165517, 0.0165517, 0.0165517, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
+font_color = Color(0.0445579, 0.0445578, 0.0445578, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
 size = Vector2(101, 856)
@@ -34,10 +38,10 @@ size = Vector2(101, 856)
 script = ExtResource("1_h2yge")
 
 [node name="bg" type="TextureRect" parent="."]
-offset_left = -955.0
-offset_top = -59.0
+offset_left = -959.0
+offset_top = -92.0
 offset_right = 53697.0
-offset_bottom = 752.0
+offset_bottom = 798.0
 texture = ExtResource("2_7mycd")
 expand_mode = 1
 
@@ -115,13 +119,11 @@ texture = ExtResource("3_lquwl")
 [node name="hellcoup" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(10696, 34.9996)
 rotation = 2.11921
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="hellcodown" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(10489, 406)
 rotation = 2.11921
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="hellcolup" type="CollisionShape2D" parent="jebakan!"]
@@ -155,7 +157,7 @@ scale = Vector2(415.914, 1.1)
 texture = ExtResource("3_lquwl")
 
 [node name="uppercollision" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(25982, -64)
+position = Vector2(25986, -63)
 scale = Vector2(300, 1.1)
 shape = SubResource("RectangleShape2D_h2yge")
 
@@ -236,14 +238,19 @@ shape = SubResource("RectangleShape2D_lquwl")
 position = Vector2(53081, 463)
 shape = SubResource("RectangleShape2D_lquwl")
 
+[node name="up2" type="Sprite2D" parent="jebakan!"]
+position = Vector2(72347.5, -10)
+scale = Vector2(299.945, 1.70313)
+texture = ExtResource("3_lquwl")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Buttonjmp" type="Button" parent="CanvasLayer"]
-offset_left = 827.0
-offset_top = 55.0
-offset_right = 1078.0
-offset_bottom = 655.0
-text = "JUMP"
+offset_left = 7.0
+offset_top = -47.0
+offset_right = 1462.0
+offset_bottom = 751.0
+flat = true
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_left = -1.0
@@ -285,8 +292,9 @@ offset_left = -2.0
 offset_top = 185.0
 offset_right = 548.0
 offset_bottom = 234.0
-text = "cara main: klik tombol jump berkali kali dan jangan sampai menyentuh
+text = "cara main: tap layarjump berkali kali dan jangan sampai menyentuh
 rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+label_settings = SubResource("LabelSettings_7mycd")
 
 [node name="restart" type="CanvasLayer" parent="."]
 visible = false
@@ -299,6 +307,7 @@ offset_bottom = 234.0
 text = "restart (ulang)"
 
 [node name="winarea" type="Area2D" parent="." groups=["win area"]]
+visible = false
 position = Vector2(53659, 297)
 collision_layer = 8
 collision_mask = 2

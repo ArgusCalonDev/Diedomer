@@ -19,7 +19,7 @@ script = ExtResource("1_vkac0")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1089.0
+offset_right = 1336.0
 offset_bottom = 723.0
 texture = ExtResource("2_rlycu")
 expand_mode = 1
@@ -50,6 +50,12 @@ offset_right = 797.0
 offset_bottom = 619.0
 theme_override_font_sizes/font_size = 35
 text = "ke main menu"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 1340.0
+offset_right = 2420.0
+offset_bottom = 720.0
 
 [connection signal="pressed" from="main lagi" to="." method="_on_main_lagi_pressed"]
 [connection signal="pressed" from="ke main menu" to="." method="_on_ke_main_menu_pressed"]
