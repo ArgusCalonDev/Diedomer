@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://7j5c4nxlv4vn"]
+[gd_scene load_steps=18 format=3 uid="uid://7j5c4nxlv4vn"]
 
 [ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
@@ -17,10 +17,17 @@ size = Vector2(165.314, 156.97)
 size = Vector2(344.549, 133.1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h2yge"]
-size = Vector2(177.652, 107.273)
+size = Vector2(177.652, 112.727)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
 size = Vector2(128, 319.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
+size = Vector2(38394, 188)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7mycd"]
+radius = 34.9956
+height = 83.9956
 
 [sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
 
@@ -239,9 +246,32 @@ position = Vector2(53081, 463)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="up2" type="Sprite2D" parent="jebakan!"]
-position = Vector2(72347.5, -10)
+position = Vector2(72344, -45)
 scale = Vector2(299.945, 1.70313)
 texture = ExtResource("3_lquwl")
+
+[node name="douri" type="Sprite2D" parent="jebakan!"]
+position = Vector2(54992, 346)
+scale = Vector2(0.230418, 0.323913)
+texture = ExtResource("3_7mycd")
+
+[node name="down2" type="Sprite2D" parent="jebakan!"]
+position = Vector2(72344, 455)
+scale = Vector2(299.945, 1.70313)
+texture = ExtResource("3_lquwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(72348, -50)
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(72348, 470)
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="duri" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(54981, 336)
+rotation = -1.57305
+shape = SubResource("CapsuleShape2D_7mycd")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
