@@ -24,7 +24,8 @@ script = ExtResource("1_7vrkn")
 
 [node name="bg" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 1252.0
+offset_left = 3.0
+offset_right = 1268.0
 offset_bottom = 717.0
 texture = ExtResource("2_glbon")
 expand_mode = 1
@@ -59,40 +60,40 @@ text = "keluar"
 
 [node name="credit" type="Label" parent="."]
 layout_mode = 0
-offset_left = 26.0
-offset_top = 309.0
-offset_right = 259.0
-offset_bottom = 332.0
+offset_left = 105.0
+offset_top = 307.0
+offset_right = 338.0
+offset_bottom = 366.0
 text = "music by: pixabay.com
 images by: freepik.com"
 label_settings = SubResource("LabelSettings_jix8l")
 
 [node name="dev" type="Label" parent="."]
 layout_mode = 0
-offset_left = 916.0
-offset_top = 648.0
-offset_right = 1149.0
-offset_bottom = 707.0
+offset_left = 1017.0
+offset_top = 644.0
+offset_right = 1250.0
+offset_bottom = 703.0
 text = "open source game
 by Tekenoi"
 label_settings = SubResource("LabelSettings_jix8l")
 
 [node name="github repo" type="Label" parent="."]
 layout_mode = 0
-offset_left = 28.0
-offset_top = 574.0
-offset_right = 305.0
-offset_bottom = 633.0
+offset_left = 118.0
+offset_top = 624.0
+offset_right = 395.0
+offset_bottom = 683.0
 text = "mau memodifikasi game ini?
 fork repository di github"
 label_settings = SubResource("LabelSettings_jix8l")
 
 [node name="github" type="Button" parent="."]
 layout_mode = 0
-offset_left = 90.0
-offset_top = 456.0
-offset_right = 196.0
-offset_bottom = 570.0
+offset_left = 185.0
+offset_top = 501.0
+offset_right = 291.0
+offset_bottom = 615.0
 icon = ExtResource("3_fu7sn")
 flat = true
 expand_icon = true
@@ -107,8 +108,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1252.0
-offset_right = 1252.0
+offset_left = 1265.0
+offset_top = -6.0
+offset_right = 1349.0
+offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
 
