@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://7j5c4nxlv4vn"]
+[gd_scene load_steps=19 format=3 uid="uid://7j5c4nxlv4vn"]
 
 [ext_resource type="Script" uid="uid://ce6uity8xc2h6" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://cx46cna5sm6gl" path="res://player.gd" id="2_1bvp3"]
@@ -21,19 +21,17 @@ size = Vector2(344.549, 163.444)
 size = Vector2(177.652, 112.727)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
-size = Vector2(128, 319.25)
+size = Vector2(125.402, 262.895)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kek77"]
-size = Vector2(38394, 188)
+size = Vector2(64445.7, 188)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7mycd"]
 radius = 48.0078
 height = 112.039
 
 [sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_272bh"]
-font_size = 300
+font_color = Color(3.72304e-05, 3.72304e-05, 3.72304e-05, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
 font_size = 40
@@ -65,13 +63,13 @@ texture = ExtResource("3_272bh")
 expand_mode = 1
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-offset_left = 91921.0
-offset_top = 4.0
-offset_right = 93001.0
-offset_bottom = 724.0
+offset_left = 91871.0
+offset_top = 2.0
+offset_right = 113206.0
+offset_bottom = 722.0
 
 [node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(47.9949, 354.642)
+position = Vector2(125.089, 341.93)
 collision_mask = 9
 script = ExtResource("2_1bvp3")
 
@@ -159,13 +157,11 @@ shape = SubResource("RectangleShape2D_272bh")
 [node name="hellcolup2" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(50819.7, 17.1067)
 rotation = 0.0298776
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_272bh")
 
 [node name="hellcoldown2" type="CollisionShape2D" parent="jebakan!"]
 position = Vector2(50832.1, 402.941)
 rotation = 0.0298776
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_272bh")
 
 [node name="hellcoldown" type="CollisionShape2D" parent="jebakan!"]
@@ -265,9 +261,81 @@ shape = SubResource("RectangleShape2D_lquwl")
 position = Vector2(53081, 463)
 shape = SubResource("RectangleShape2D_lquwl")
 
+[node name="up gd5" type="Sprite2D" parent="jebakan!"]
+position = Vector2(111412, -5.87488)
+scale = Vector2(1, 2.02929)
+texture = ExtResource("3_lquwl")
+
+[node name="up gd6" type="Sprite2D" parent="jebakan!"]
+position = Vector2(111789, -18)
+scale = Vector2(1, 1.91357)
+texture = ExtResource("3_lquwl")
+
+[node name="up gd7" type="Sprite2D" parent="jebakan!"]
+position = Vector2(112217, -26.3749)
+scale = Vector2(1, 1.89648)
+texture = ExtResource("3_lquwl")
+
+[node name="up gd8" type="Sprite2D" parent="jebakan!"]
+position = Vector2(112628, -20)
+scale = Vector2(1, 1.91309)
+texture = ExtResource("3_lquwl")
+
+[node name="down gd5" type="Sprite2D" parent="jebakan!"]
+position = Vector2(111599, 415.25)
+scale = Vector2(1, 2.11328)
+texture = ExtResource("3_lquwl")
+
+[node name="down gd6" type="Sprite2D" parent="jebakan!"]
+position = Vector2(112633, 425.75)
+scale = Vector2(1, 2.02734)
+texture = ExtResource("3_lquwl")
+
+[node name="down gd7" type="Sprite2D" parent="jebakan!"]
+position = Vector2(111995, 397.75)
+scale = Vector2(1, 2.29297)
+texture = ExtResource("3_lquwl")
+
+[node name="down gd8" type="Sprite2D" parent="jebakan!"]
+position = Vector2(112415, 425.25)
+scale = Vector2(1, 2.12891)
+texture = ExtResource("3_lquwl")
+
+[node name="up chape5" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(111788, -20)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="up chape6" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(112214, -38)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="up chape7" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(111415, -1)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="up chape8" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(112631, -63)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="down chape5" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(112415, 417)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="down chape6" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(111997, 384)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="down chape7" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(111593, 409.789)
+shape = SubResource("RectangleShape2D_lquwl")
+
+[node name="down chape8" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(112632, 444.422)
+shape = SubResource("RectangleShape2D_lquwl")
+
 [node name="up2" type="Sprite2D" parent="jebakan!"]
-position = Vector2(72344, -45)
-scale = Vector2(299.945, 1.70313)
+position = Vector2(82242, -50)
+scale = Vector2(454.715, 1.70313)
 texture = ExtResource("3_lquwl")
 
 [node name="douri" type="Sprite2D" parent="jebakan!"]
@@ -281,16 +349,20 @@ scale = Vector2(0.230418, 0.323913)
 texture = ExtResource("3_7mycd")
 
 [node name="down2" type="Sprite2D" parent="jebakan!"]
-position = Vector2(72344, 455)
-scale = Vector2(299.945, 1.70313)
+position = Vector2(82263.3, 455)
+scale = Vector2(454.933, 1.70313)
 texture = ExtResource("3_lquwl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(72348, -50)
+position = Vector2(79119.1, -50)
 shape = SubResource("RectangleShape2D_kek77")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="jebakan!"]
-position = Vector2(72348, 470)
+position = Vector2(79162, 452)
+shape = SubResource("RectangleShape2D_kek77")
+
+[node name="VOID" type="CollisionShape2D" parent="jebakan!"]
+position = Vector2(82257, 678)
 shape = SubResource("RectangleShape2D_kek77")
 
 [node name="duri" type="CollisionShape2D" parent="jebakan!"]
@@ -320,14 +392,12 @@ offset_bottom = 585.0
 text = "awas, ada rintangan jumscare!"
 label_settings = SubResource("LabelSettings_1bvp3")
 
-[node name="Label5" type="Label" parent="CanvasLayer"]
-offset_left = 126573.0
-offset_top = 12.0
-offset_right = 132080.0
-offset_bottom = 421.0
-rotation = 1.57177
-text = "FINISH"
-label_settings = SubResource("LabelSettings_272bh")
+[node name="speed" type="Label" parent="CanvasLayer"]
+offset_left = 37.5214
+offset_top = 152.68
+offset_right = 391.521
+offset_bottom = 186.68
+label_settings = SubResource("LabelSettings_1bvp3")
 
 [node name="MenuAwal" type="CanvasLayer" parent="."]
 process_mode = 3
@@ -376,12 +446,12 @@ offset_bottom = 234.0
 text = "restart (ulang)"
 
 [node name="winarea" type="Area2D" parent="." groups=["win area"]]
-position = Vector2(126520, 251.005)
+position = Vector2(138073, 207)
 collision_layer = 8
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="winarea"]
-position = Vector2(-33880, 92.9951)
+position = Vector2(-24816.6, 147.417)
 shape = SubResource("RectangleShape2D_5vw27")
 
 [node name="ColorRect" type="ColorRect" parent="."]
