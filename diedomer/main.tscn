@@ -378,9 +378,9 @@ shape = SubResource("CapsuleShape2D_7mycd")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Buttonjmp" type="Button" parent="CanvasLayer"]
-offset_left = 7.0
+offset_left = -193.0
 offset_top = -47.0
-offset_right = 1462.0
+offset_right = 2917.0
 offset_bottom = 751.0
 flat = true
 

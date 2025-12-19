@@ -25,36 +25,36 @@ script = ExtResource("1_7vrkn")
 [node name="bg" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 3.0
-offset_right = 1268.0
+offset_right = 1418.0
 offset_bottom = 717.0
 texture = ExtResource("2_glbon")
 expand_mode = 1
 
 [node name="main_menu_label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 453.0
-offset_top = 148.0
-offset_right = 744.0
-offset_bottom = 237.0
+offset_left = 545.0
+offset_top = 142.0
+offset_right = 836.0
+offset_bottom = 231.0
 text = "MAIN MENU
 DIEDOMER!"
 label_settings = SubResource("LabelSettings_7vrkn")
 
 [node name="main" type="Button" parent="."]
 layout_mode = 0
-offset_left = 399.0
+offset_left = 493.0
 offset_top = 265.0
-offset_right = 789.0
+offset_right = 883.0
 offset_bottom = 429.0
 theme_override_font_sizes/font_size = 35
 text = "main"
 
 [node name="keluar" type="Button" parent="."]
 layout_mode = 0
-offset_left = 397.0
-offset_top = 443.0
-offset_right = 787.0
-offset_bottom = 607.0
+offset_left = 496.0
+offset_top = 441.0
+offset_right = 886.0
+offset_bottom = 605.0
 theme_override_font_sizes/font_size = 35
 text = "keluar"
 
@@ -108,10 +108,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1265.0
-offset_top = -6.0
-offset_right = 1349.0
-offset_bottom = -6.0
+offset_left = 1417.0
+offset_right = 1501.0
 grow_horizontal = 2
 grow_vertical = 2
 

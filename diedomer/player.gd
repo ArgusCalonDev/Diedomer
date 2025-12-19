@@ -5,7 +5,7 @@ var jump_force = -450
 var gravity_dir = Vector2.DOWN # gravitasi kebawah
 
 var speed := 300.0 # kecepatan awal
-var max_speed := 2000.0 #maksimum kecepatan
+var max_speed := 1400.0 # maksimum kecepatan
 var speed_step := 60.0 # speed bertambah tiap ...
 var speed_timer := 0.0 # speed timer
 var move_dir = 1.0
