@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://bn4m42jae4203"]
+
+[ext_resource type="Script" uid="uid://byfxqs3tsqxh0" path="res://options.gd" id="1_ao2gm"]
+[ext_resource type="Texture2D" uid="uid://dgu5puqm2bhbd" path="res://assets/images/handmade-skull-laid-orange-paper-stripe_11zon.jpg" id="1_se8ut"]
+[ext_resource type="FontFile" uid="uid://bhyt8kvscyjue" path="res://fonts/SpaceNova-6Rpd1.otf" id="2_ao2gm"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_07a1d"]
+font = ExtResource("2_ao2gm")
+font_size = 50
+font_color = Color(0.0121183, 0.0121183, 0.0121183, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_p8250"]
+font_size = 30
+font_color = Color(0.00820202, 0.00820202, 0.00820202, 1)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ao2gm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1497.0
+offset_bottom = 717.0
+texture = ExtResource("1_se8ut")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 119.0
+offset_right = 953.0
+offset_bottom = 173.0
+text = "Pengaturan"
+label_settings = SubResource("LabelSettings_07a1d")
+
+[node name="EnglishButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 269.0
+offset_right = 642.0
+offset_bottom = 407.0
+text = "English"
+
+[node name="IndonesianButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 812.0
+offset_top = 266.0
+offset_right = 1027.0
+offset_bottom = 405.0
+text = "Bahasa Indonesia"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 636.0
+offset_top = 198.0
+offset_right = 811.0
+offset_bottom = 240.0
+text = "pilih bahasa"
+label_settings = SubResource("LabelSettings_p8250")
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 490.0
+offset_right = 268.0
+offset_bottom = 620.0
+text = "back
+"
+
+[connection signal="pressed" from="EnglishButton" to="." method="_on_english_button_pressed"]
+[connection signal="pressed" from="IndonesianButton" to="." method="_on_indonesian_button_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

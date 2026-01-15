@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-01-15 18:52+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: .\n"
+
+#: you_win.tscn
+msgid "Kamu menang!"
+msgstr "You Win!"
+
+#: you_win.tscn you_lose.tscn
+msgid "main lagi"
+msgstr "Play again"
+
+#: you_win.tscn you_lose.tscn
+msgid "ke main menu"
+msgstr "back to main menu"
+
+#: you_lose.tscn
+msgid "KAMU KALAH!"
+msgstr "YOU LOSE!"
+
+#: skins.tscn
+msgid "PILIH SKIN"
+msgstr "CHOOSE A SKIN"
+
+#: skins.tscn
+msgid "DOMer Cat"
+msgstr "DOMer Cat"
+
+#: skins.tscn
+msgid "GiTig"
+msgstr "GiTig"
+
+#: options.tscn
+msgid "Pengaturan"
+msgstr "Options"
+
+#: options.tscn
+msgid "English"
+msgstr "English"
+
+#: options.tscn
+msgid "Bahasa Indonesia"
+msgstr "Indonesian"
+
+#: options.tscn
+msgid "pilih bahasa"
+msgstr "choose a language"
+
+#: main_menu.tscn
+msgid ""
+"MAIN MENU\n"
+"DIEDOMER!"
+msgstr ""
+"MAIN MENU\n"
+"DIEDOMER!"
+
+#: main_menu.tscn
+msgid "main"
+msgstr "play"
+
+#: main_menu.tscn
+msgid "pilih skin"
+msgstr "choose a skin"
+
+#: main_menu.tscn
+msgid "keluar"
+msgstr "quit"
+
+#: main_menu.tscn
+msgid ""
+"music by: pixabay.com\n"
+"images by: freepik.com"
+msgstr ""
+"music by: pixabay.com\n"
+"images by: freepik.com"
+
+#: main_menu.tscn
+msgid ""
+"open source game\n"
+"by Tekenoi"
+msgstr ""
+"open source game\n"
+"by Tekenoi"
+
+#: main_menu.tscn
+msgid ""
+"mau memodifikasi game ini?\n"
+"fork repository di github"
+msgstr ""
+"wanna modify this game?\n"
+"fork repository on github"
+
+#: main.tscn
+msgid "awas, ada rintangan jumscare!"
+msgstr "beware, there's a jumscare obstacle!"
+
+#: main.tscn
+msgid "mulai"
+msgstr "start"
+
+#: main.tscn
+msgid "kembali ke main menu"
+msgstr "back to main menu"
+
+#: main.tscn
+msgid "MENU AWAL!"
+msgstr "START MENU!"
+
+#: main.tscn
+msgid ""
+"cara main: tap layar berkali kali dan jangan sampai menyentuh\n"
+"rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+msgstr ""
+"how to play: tap the screen many times and don't touch it\n"
+"obstacles above and below! and be prepared for a surprise at the end."
+
+#: main.tscn
+msgid "restart (ulang)"
+msgstr "restart"

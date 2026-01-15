@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://0nc6mpoh8hen"]
+
+[ext_resource type="Script" uid="uid://dleg1wj4dijrw" path="res://language.gd" id="1_t5yah"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2ppyg"]
+font_size = 50
+
+[node name="Language" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t5yah")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 246.0
+offset_top = 122.0
+offset_right = 1028.0
+offset_bottom = 191.0
+text = "Pilih Bahasa/Choose A Language"
+label_settings = SubResource("LabelSettings_2ppyg")
+
+[node name="english" type="Button" parent="."]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 278.0
+offset_right = 602.0
+offset_bottom = 462.0
+text = "English/Inggris"
+
+[node name="indonesia" type="Button" parent="."]
+layout_mode = 0
+offset_left = 669.0
+offset_top = 280.0
+offset_right = 1004.0
+offset_bottom = 464.0
+text = "Indonesia/Indonesian"
+
+[connection signal="pressed" from="english" to="." method="_on_english_pressed"]
+[connection signal="pressed" from="indonesia" to="." method="_on_indonesia_pressed"]

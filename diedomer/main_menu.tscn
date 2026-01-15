@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://c06tuekecq05q"]
+[gd_scene load_steps=9 format=3 uid="uid://c06tuekecq05q"]
 
 [ext_resource type="FontFile" uid="uid://bhyt8kvscyjue" path="res://fonts/SpaceNova-6Rpd1.otf" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://waw0h0x4comk" path="res://main_menu.gd" id="1_7vrkn"]
 [ext_resource type="Texture2D" uid="uid://dgu5puqm2bhbd" path="res://assets/images/handmade-skull-laid-orange-paper-stripe_11zon.jpg" id="2_glbon"]
 [ext_resource type="Texture2D" uid="uid://cppd0clr6grq6" path="res://assets/icons/github.png" id="3_fu7sn"]
 [ext_resource type="AudioStream" uid="uid://dh0uaschpyyry" path="res://assets/audios/main music (diedomer).mp3" id="4_jix8l"]
+[ext_resource type="Texture2D" uid="uid://bniolnlb6htrv" path="res://assets/icons/tekenoi icon.png" id="6_nlkkf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7vrkn"]
 font = ExtResource("1_06t4h")
@@ -121,6 +122,11 @@ offset_left = 1417.0
 offset_right = 1501.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TekenoiIcon" type="Sprite2D" parent="."]
+position = Vector2(973, 676)
+scale = Vector2(0.384058, 0.38)
+texture = ExtResource("6_nlkkf")
 
 [connection signal="pressed" from="main" to="." method="_on_main_pressed"]
 [connection signal="pressed" from="skins" to="." method="_on_skins_pressed"]

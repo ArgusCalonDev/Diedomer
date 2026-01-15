@@ -12,7 +12,7 @@ config_version=5
 
 config/name="DieDOMer"
 config/version="high-end prototype"
-run/main_scene="uid://c06tuekecq05q"
+run/main_scene="uid://0nc6mpoh8hen"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="uid://rtr3u03u1mb0"
 
@@ -33,6 +33,11 @@ window/stretch/aspect="expand"
 
 jebakan=""
 "win area"=""
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/en/LC_MESSAGES/en.po", "res://locale/id/LC_MESSAGES/id_ID.po")
+locale/translations_pot_files=PackedStringArray("res://you_win.tscn", "res://you_win.gd", "res://you_lose.tscn", "res://you_lose.gd", "res://skins.tscn", "res://skins.gd", "res://player.gd", "res://options.tscn", "res://main_menu.tscn", "res://main_menu.gd", "res://main.tscn", "res://main.gd", "res://global.gd")
 
 [rendering]
 

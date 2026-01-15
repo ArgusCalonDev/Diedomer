@@ -1,0 +1,132 @@
+# LANGUAGE translation for DieDOMer for the following files:
+# res://you_win.tscn
+# res://you_win.gd
+# res://you_lose.tscn
+# res://you_lose.gd
+# res://skins.tscn
+# res://skins.gd
+# res://player.gd
+# res://options.tscn
+# res://main_menu.tscn
+# res://main_menu.gd
+# res://main.tscn
+# res://main.gd
+# res://global.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: DieDOMer\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: you_win.tscn
+msgid "Kamu menang!"
+msgstr ""
+
+#: you_win.tscn
+#: you_lose.tscn
+msgid "main lagi"
+msgstr ""
+
+#: you_win.tscn
+#: you_lose.tscn
+msgid "ke main menu"
+msgstr ""
+
+#: you_lose.tscn
+msgid "KAMU KALAH!"
+msgstr ""
+
+#: skins.tscn
+msgid "PILIH SKIN"
+msgstr ""
+
+#: skins.tscn
+msgid "DOMer Cat"
+msgstr ""
+
+#: skins.tscn
+msgid "GiTig"
+msgstr ""
+
+#: options.tscn
+msgid "Pengaturan"
+msgstr ""
+
+#: options.tscn
+msgid "English"
+msgstr ""
+
+#: options.tscn
+msgid "Bahasa Indonesia"
+msgstr ""
+
+#: options.tscn
+msgid "pilih bahasa"
+msgstr ""
+
+#: main_menu.tscn
+msgid ""
+"MAIN MENU\n"
+"DIEDOMER!"
+msgstr ""
+
+#: main_menu.tscn
+msgid "main"
+msgstr ""
+
+#: main_menu.tscn
+msgid "pilih skin"
+msgstr ""
+
+#: main_menu.tscn
+msgid "keluar"
+msgstr ""
+
+#: main_menu.tscn
+msgid ""
+"music by: pixabay.com\n"
+"images by: freepik.com"
+msgstr ""
+
+#: main_menu.tscn
+msgid ""
+"open source game\n"
+"by Tekenoi"
+msgstr ""
+
+#: main_menu.tscn
+msgid ""
+"mau memodifikasi game ini?\n"
+"fork repository di github"
+msgstr ""
+
+#: main.tscn
+msgid "awas, ada rintangan jumscare!"
+msgstr ""
+
+#: main.tscn
+msgid "mulai"
+msgstr ""
+
+#: main.tscn
+msgid "kembali ke main menu"
+msgstr ""
+
+#: main.tscn
+msgid "MENU AWAL!"
+msgstr ""
+
+#: main.tscn
+msgid ""
+"cara main: tap layar berkali kali dan jangan sampai menyentuh\n"
+"rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+msgstr ""
+
+#: main.tscn
+msgid "restart (ulang)"
+msgstr ""

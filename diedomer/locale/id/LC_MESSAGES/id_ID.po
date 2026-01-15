@@ -1,0 +1,145 @@
+# LANGUAGE translation for DieDOMer for the following files:
+# res://you_win.tscn
+# res://you_win.gd
+# res://you_lose.tscn
+# res://you_lose.gd
+# res://skins.tscn
+# res://skins.gd
+# res://player.gd
+# res://options.tscn
+# res://main_menu.tscn
+# res://main_menu.gd
+# res://main.tscn
+# res://main.gd
+# res://global.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DieDOMer\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#: you_win.tscn
+msgid "Kamu menang!"
+msgstr "Kamu menang!"
+
+#: you_win.tscn you_lose.tscn
+msgid "main lagi"
+msgstr "main lagi"
+
+#: you_win.tscn you_lose.tscn
+msgid "ke main menu"
+msgstr "ke main menu"
+
+#: you_lose.tscn
+msgid "KAMU KALAH!"
+msgstr "KAMU KALAH!"
+
+#: skins.tscn
+msgid "PILIH SKIN"
+msgstr "PILIH SKIN"
+
+#: skins.tscn
+msgid "DOMer Cat"
+msgstr "DOMer Cat"
+
+#: skins.tscn
+msgid "GiTig"
+msgstr "GiTig"
+
+#: options.tscn
+msgid "Pengaturan"
+msgstr "Pengaturan"
+
+#: options.tscn
+msgid "English"
+msgstr "Bahasa Inggris"
+
+#: options.tscn
+msgid "Bahasa Indonesia"
+msgstr "Bahasa Indonesia"
+
+#: options.tscn
+msgid "pilih bahasa"
+msgstr "pilih bahasa"
+
+#: main_menu.tscn
+msgid ""
+"MAIN MENU\n"
+"DIEDOMER!"
+msgstr ""
+"MAIN MENU\n"
+"DIEDOMER!"
+
+#: main_menu.tscn
+msgid "main"
+msgstr "main"
+
+#: main_menu.tscn
+msgid "pilih skin"
+msgstr "pilih skin"
+
+#: main_menu.tscn
+msgid "keluar"
+msgstr "keluar"
+
+#: main_menu.tscn
+msgid ""
+"music by: pixabay.com\n"
+"images by: freepik.com"
+msgstr ""
+"music by: pixabay.com\n"
+"images by: freepik.com"
+
+#: main_menu.tscn
+msgid ""
+"open source game\n"
+"by Tekenoi"
+msgstr ""
+"Game open source\n"
+"by Tekenoi"
+
+#: main_menu.tscn
+msgid ""
+"mau memodifikasi game ini?\n"
+"fork repository di github"
+msgstr ""
+"mau memodifikasi game ini?\n"
+"fork repository di github"
+
+#: main.tscn
+msgid "awas, ada rintangan jumscare!"
+msgstr "awas, ada rintangan jumscare!"
+
+#: main.tscn
+msgid "mulai"
+msgstr "mulai"
+
+#: main.tscn
+msgid "kembali ke main menu"
+msgstr "kembali ke main menu"
+
+#: main.tscn
+msgid "MENU AWAL!"
+msgstr "MENU AWAL!"
+
+#: main.tscn
+msgid ""
+"cara main: tap layar berkali kali dan jangan sampai menyentuh\n"
+"rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+msgstr ""
+"cara main: tap layar berkali kali dan jangan sampai menyentuh\n"
+"rintangan di atas dan bawah! dan bersiaplah ada kejutan di akhir."
+
+#: main.tscn
+msgid "restart (ulang)"
+msgstr "restart (ulang)"
