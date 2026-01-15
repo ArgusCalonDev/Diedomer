@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=3 uid="uid://b6y05652juat1"]
+
+[ext_resource type="Script" uid="uid://c7f5cn25wefpe" path="res://skins.gd" id="1_w3rua"]
+[ext_resource type="Texture2D" uid="uid://dgu5puqm2bhbd" path="res://assets/images/handmade-skull-laid-orange-paper-stripe_11zon.jpg" id="1_x7gig"]
+[ext_resource type="FontFile" uid="uid://bhyt8kvscyjue" path="res://fonts/SpaceNova-6Rpd1.otf" id="2_w3rua"]
+[ext_resource type="Texture2D" uid="uid://eup7pti5du2f" path="res://assets/images/DOMER cat.png" id="3_sav85"]
+[ext_resource type="Texture2D" uid="uid://b2d5xbyax6qtv" path="res://assets/images/GiTig.jpg" id="5_crgjt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_udkr4"]
+font = ExtResource("2_w3rua")
+font_size = 50
+font_color = Color(0.0214346, 0.0214346, 0.0214346, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_5l5uc"]
+font_size = 30
+font_color = Color(0.00489983, 0.00489983, 0.00489983, 1)
+
+[node name="skins" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w3rua")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1607.0
+offset_bottom = 717.0
+texture = ExtResource("1_x7gig")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 627.0
+offset_top = 106.0
+offset_right = 955.0
+offset_bottom = 160.0
+text = "PILIH SKIN"
+label_settings = SubResource("LabelSettings_udkr4")
+
+[node name="DOMer Cat" type="Button" parent="."]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 227.0
+offset_right = 506.0
+offset_bottom = 353.0
+icon = ExtResource("3_sav85")
+expand_icon = true
+
+[node name="GiTig" type="Button" parent="."]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 230.0
+offset_right = 729.0
+offset_bottom = 356.0
+icon = ExtResource("5_crgjt")
+flat = true
+expand_icon = true
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 352.0
+offset_top = 362.0
+offset_right = 512.0
+offset_bottom = 404.0
+text = "DOMer Cat"
+label_settings = SubResource("LabelSettings_5l5uc")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 357.0
+offset_right = 773.0
+offset_bottom = 399.0
+text = "GiTig"
+label_settings = SubResource("LabelSettings_5l5uc")
+
+[connection signal="pressed" from="DOMer Cat" to="." method="_on_domer_cat_pressed"]
+[connection signal="pressed" from="GiTig" to="." method="_on_gi_tig_pressed"]

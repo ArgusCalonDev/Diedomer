@@ -10,3 +10,7 @@ func _on_keluar_pressed() -> void:
 
 func _on_github_pressed() -> void:
     OS.shell_open("https://github.com/ArgusCalonDev/Diedomer")
+
+
+func _on_skins_pressed() -> void:
+    get_tree().change_scene_to_file("res://skins.tscn")

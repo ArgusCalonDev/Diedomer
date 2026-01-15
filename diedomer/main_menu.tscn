@@ -32,27 +32,36 @@ expand_mode = 1
 
 [node name="main_menu_label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 545.0
-offset_top = 142.0
-offset_right = 836.0
-offset_bottom = 231.0
+offset_left = 533.0
+offset_top = 63.0
+offset_right = 824.0
+offset_bottom = 152.0
 text = "MAIN MENU
 DIEDOMER!"
 label_settings = SubResource("LabelSettings_7vrkn")
 
 [node name="main" type="Button" parent="."]
 layout_mode = 0
-offset_left = 493.0
-offset_top = 265.0
-offset_right = 883.0
-offset_bottom = 429.0
+offset_left = 500.0
+offset_top = 162.0
+offset_right = 881.0
+offset_bottom = 304.0
 theme_override_font_sizes/font_size = 35
 text = "main"
+
+[node name="skins" type="Button" parent="."]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 318.0
+offset_right = 881.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 35
+text = "pilih skin"
 
 [node name="keluar" type="Button" parent="."]
 layout_mode = 0
 offset_left = 496.0
-offset_top = 441.0
+offset_top = 473.0
 offset_right = 886.0
 offset_bottom = 605.0
 theme_override_font_sizes/font_size = 35
@@ -114,5 +123,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [connection signal="pressed" from="main" to="." method="_on_main_pressed"]
+[connection signal="pressed" from="skins" to="." method="_on_skins_pressed"]
 [connection signal="pressed" from="keluar" to="." method="_on_keluar_pressed"]
 [connection signal="pressed" from="github" to="." method="_on_github_pressed"]

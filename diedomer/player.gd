@@ -11,6 +11,11 @@ var speed_timer := 0.0 # speed timer
 var move_dir = 1.0
 # nodes
 @onready var speed_label = $"../CanvasLayer/speed"
+@onready var player_sprite = $Sprite2D
+
+func _ready() -> void:
+    if Global.selected_skin_id in Global.skins:
+        player_sprite.texture = Global.skins[Global.selected_skin_id]["texture"]
 
 func _physics_process(delta):
     velocity += gravity_dir * gravity * delta
