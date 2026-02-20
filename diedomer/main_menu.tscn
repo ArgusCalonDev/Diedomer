@@ -54,10 +54,19 @@ text = "main"
 layout_mode = 0
 offset_left = 500.0
 offset_top = 318.0
-offset_right = 881.0
+offset_right = 673.0
 offset_bottom = 460.0
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 28
 text = "pilih skin"
+
+[node name="pengaturan" type="Button" parent="."]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 318.0
+offset_right = 880.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 28
+text = "pengaturan"
 
 [node name="keluar" type="Button" parent="."]
 layout_mode = 0
@@ -128,7 +137,16 @@ position = Vector2(973, 676)
 scale = Vector2(0.384058, 0.38)
 texture = ExtResource("6_nlkkf")
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 634.0
+offset_top = 642.0
+offset_right = 728.0
+offset_bottom = 665.0
+text = "v Alpha LE-3"
+
 [connection signal="pressed" from="main" to="." method="_on_main_pressed"]
 [connection signal="pressed" from="skins" to="." method="_on_skins_pressed"]
+[connection signal="pressed" from="pengaturan" to="." method="_on_pengaturan_pressed"]
 [connection signal="pressed" from="keluar" to="." method="_on_keluar_pressed"]
 [connection signal="pressed" from="github" to="." method="_on_github_pressed"]

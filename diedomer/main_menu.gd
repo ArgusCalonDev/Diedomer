@@ -14,3 +14,7 @@ func _on_github_pressed() -> void:
 
 func _on_skins_pressed() -> void:
     get_tree().change_scene_to_file("res://skins.tscn")
+
+
+func _on_pengaturan_pressed() -> void:
+    get_tree().change_scene_to_file("res://options.tscn")
